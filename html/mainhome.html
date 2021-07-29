@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDjAJcPaP8lAr-uhzlvNFzN_dQDb79Yc2Y",
+    authDomain: "clonecord-c5b8e.firebaseapp.com",
+    projectId: "clonecord-c5b8e",
+    storageBucket: "clonecord-c5b8e.appspot.com",
+    messagingSenderId: "43216213551",
+    appId: "1:43216213551:web:ca0edf3d0ca005c77358da",
+    measurementId: "G-F3R3FX41BK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+    <link rel="stylesheet" href="../css/mainhome.css">
+    <title>Home</title>
+</head>
+<body>
+    
+
+    <main>
+        <div id="Servers">
+            <img id="logo" src="https://i.redd.it/y3wduhwn4gd61.jpg" alt="logo">
+            <div id="separator">
+
+            </div>
+            <div id="serverlists">
+                <div class="server">
+                    <img class="discordserverpfp" title="Hub" src="https://pbs.twimg.com/profile_images/1392864511669854217/dBymBmGq_400x400.jpg" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="directmessages">
+            <button id="friends">
+                <h3 id="firendstxt">Friends</h3>
+            </button>
+            
+            <h3 id="dmsheader">Direct Messages</h3>
+
+<div id="dmslist">
+            <!-- <div class="messageprofiles">
+                <img class="pfp" src="" alt="">
+                <h2 class="name"></h2>
+            </div> -->
+        </div>
+
+            <footer id="dmsfooter">
+                <img id="userpfp" src="" >
+                <div id="nameanid">
+                    <h4 id="username"></h4>
+                    <small id="userid"></small>
+                </div>
+                <button onclick="window.location.href = './settings.html'" id="settingsicon">⚙️</button>
+            </footer>
+        </div>
+
+
+        <div class="textingarea">
+            <div class="textareaheader">
+                <h1 class="textareaheader-txt">Talk in Hub</h1>
+            </div>
+            <div class="texts">
+                <div class="text">
+                    <div class="textssentdetails">
+                        <img class="text-pfp" src="https://pbs.twimg.com/profile_images/1392864511669854217/dBymBmGq_400x400.jpg" alt="">
+                        <h2 class="text-sent-by">Jeebo</h2>
+                        <h3 class="text-sent-in"> 22/22/22 : 13:15</h3>
+                    </div>
+                    <h3 class="text-txt">Hi this is a predeterminated text </h3>
+                </div>
+            </div>
+            <div class="inputarea">
+                <form id="txtmsgform" >
+                    <input class="inputmessages" placeholder="Message in Hub" type="text">
+                    <button class="sendmsg">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../Js/mainhome.js"></script>
+
+</body>
+</html>
